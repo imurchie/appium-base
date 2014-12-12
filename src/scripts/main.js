@@ -1,11 +1,17 @@
-// Require Node modules in the browser thanks to Browserify: http://browserify.org
-var bespoke = require('bespoke'),
-  cube = require('bespoke-theme-cube'),
-  keys = require('bespoke-keys'),
-  touch = require('bespoke-touch'),
-  bullets = require('bespoke-bullets'),
-  backdrop = require('bespoke-backdrop'),
-  progress = require('bespoke-progress');
+// I hate the default bespoke style
+require('bespoke').from('article', [
+//  require('bespoke-theme-cube')(),
+  require('bespoke-theme-voltaire')(),
+  require('bespoke-keys')(),
+  require('bespoke-touch')(),
+  require('bespoke-bullets')('li, .bullet'),
+  require('bespoke-backdrop')(),
+  require('bespoke-state')(),
+  require('bespoke-scale')(),
+  require('bespoke-hash')(),
+  require('bespoke-progress')(),
+  require('bespoke-forms')()
+]);
 
 // Bespoke.js
 bespoke.from('article', [
@@ -18,7 +24,7 @@ bespoke.from('article', [
 ]);
 
 // Prism syntax highlighting
-// This is actually loaded from "bower_components" thanks to
-// debowerify: https://github.com/eugeneware/debowerify
 require('prism');
 
+// sole's fullscreen hack.
+require('bespoke-fullscreenbackground');
