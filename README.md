@@ -1,5 +1,8 @@
 # Appium Base
-> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
+
+A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built
+with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke). Forms
+the base for [Isaac Murchie](http://twitter.com/imurchie)'s Appium talks.
 
 ## View slides locally
 
